@@ -9,7 +9,7 @@ library("DESeq2")
 ### Step 3: res <- results(dds, contrast=c("condition","trt","con"))
 
 ## Loading the data
-## Used to be ablt to do this from a library call "pasilla" but there is a bug
+## Used to be able to do this from a library call "pasilla" but there is a bug
 
 
 ### loading your own personal data
@@ -175,8 +175,3 @@ ggplot(data, aes(PC1, PC2, color=condition, shape=type)) +
   geom_point(size=3) +
   xlab(paste0("PC1: ",percentVar[1],"% variance")) +
   ylab(paste0("PC2: ",percentVar[2],"% variance"))
-
-
-
-
-
